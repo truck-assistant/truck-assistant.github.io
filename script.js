@@ -112,11 +112,11 @@ let processor = {
     currentEvent = -1
 
     this.v1.addEventListener('timeupdate', (() => {
-      if (this.v1.currentTime >= 90) {
+      if (this.v1.currentTime >= 24) {
         this.v1.pause()
       }
       if (this.audio.paused) {
-        if (this.v1.currentTime >= 71 && this.v1.currentTime <= 72) {
+        if (this.v1.currentTime >= 4 && this.v1.currentTime <= 5) {
           currentEvent = 0
         }
         if (currentEvent >= 0) { 
