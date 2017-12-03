@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #444;
+    }
+    video, audio,  img {
+      display: none;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body onload="processor.doLoad()">
+  <video class="v1" src="videos/d.mov" controls="true"></video>
+  <video class="v2" src="videos/simulation.mp4" controls="true"></video>
+  <audio controls="">
+    <source src="audio/master.m4a" type="audio/mpeg">
+  </audio>
+  <img class="chat chatL" src="images/chat-l.png">
+  <img class="chat chat0" src="images/chat-0.png">
+  <img class="chat chat1" src="images/chat-1.png">
+  <img class="chat chat2" src="images/chat-2.png">
+  <img class="chat chat3" src="images/chat-3.png">
+  <img class="chat chat4" src="images/chat-4.png">
+  <img class="chat chat5" src="images/chat-5.png">
+  <div class="container">
+    <canvas class="canvas"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
